@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD Operations</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="app-container">
+
+    <aside class="sidebar-bg">
+      <div class="logo-section">
+        <div class="logo-line"></div>
+        <h1 class="logo-text">CRUD OPERATIONS</h1>
+      </div>
+
+      <div class="profile-card">
+        <img src="./css/img/7f02c4469c5672219055d43b0ffb2caf907f4b0d.jpg" alt="Admin" class="profile-img">
+        <div class="profile-info">
+          <span class="user-name">Karthi Madesh</span>
+          <span class="user-role">Admin</span>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="#" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#" class="nav-link"><i class="fa-regular fa-bookmark"></i> Course</a>
+        <a href="#" class="nav-link active"><i class="fa-solid fa-graduation-cap"></i> Students</a>
+        <a href="#" class="nav-link"><i class="fa-solid fa-file-invoice-dollar"></i> Payment</a>
+        <a href="#" class="nav-link"><i class="fa-regular fa-file-lines"></i> Report</a>
+        <a href="#" class="nav-link"><i class="fa-solid fa-sliders"></i> Settings</a>
+      </nav>
+
+      <a href="#" class="logout-btn">
+        <span>Logout</span>
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+      </a>
+    </aside>
+
+
+    <main class="main-content">
+      <header class="header">
+        <div class="search-wrapper">
+          <input type="text" placeholder="Search..." class="search-input">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
+        <i class="fa-regular fa-bell notification-icon"></i>
+      </header>
+
+      <section class="table-header">
+        <h2 class="title">Students List</h2>
+        <div class="actions">
+          <i class="fa-solid fa-sort sort-btn"></i>
+          <button class="brand-yellow btn-add">ADD NEW STUDENT</button>
+        </div>
+      </section>
+   
+      <section class="add-student-form">
+        <input type="text" id="newName" placeholder="Имя">
+        <input type="email" id="newEmail" placeholder="Email">
+        <input type="text" id="newPhone" placeholder="Телефон">
+        <button id="addBtn" class="brand-yellow">Добавить</button>
+      </section>
+
+     
+      <div class="table-wrapper">
+        <table class="students-table">
+         
+          <tbody id="studentsBody">
+
+          </tbody>
+        </table>
+      </div>
+      <div class="table-wrapper">
+        <table class="students-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Enroll Number</th>
+              <th>Date of admission</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="student-info">
+                <img src="./css/img/7f02c4469c5672219055d43b0ffb2caf907f4b0d.jpg" alt="">
+                <span>Karthi</span>
+              </td>
+              <td>karthi@gmail.com</td>
+              <td>7305477760</td>
+              <td>1234567305477760</td>
+              <td>08-Dec, 2021</td>
+              <td class="row-actions">
+                <i class="fa-solid fa-pen edit"></i>
+                <i class="fa-regular fa-trash-can delete"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="student-info">
+                <img src="./css/img/7f02c4469c5672219055d43b0ffb2caf907f4b0d.jpg" alt="">
+                <span>Karthi</span>
+              </td>
+              <td>karthi@gmail.com</td>
+              <td>7305477760</td>
+              <td>1234567305477760</td>
+              <td>08-Dec, 2021</td>
+              <td class="row-actions">
+                <i class="fa-solid fa-pen edit"></i>
+                <i class="fa-regular fa-trash-can delete"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="student-info">
+                <img src="./css/img/7f02c4469c5672219055d43b0ffb2caf907f4b0d.jpg" alt="">
+                <span>Karthi</span>
+              </td>
+              <td>karthi@gmail.com</td>
+              <td>7305477760</td>
+              <td>1234567305477760</td>
+              <td>08-Dec, 2021</td>
+              <td class="row-actions">
+                <i class="fa-solid fa-pen edit"></i>
+                <i class="fa-regular fa-trash-can delete"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="student-info">
+                <img src="./css/img/7f02c4469c5672219055d43b0ffb2caf907f4b0d.jpg" alt="">
+                <span>Karthi</span>
+              </td>
+              <td>karthi@gmail.com</td>
+              <td>7305477760</td>
+              <td>1234567305477760</td>
+              <td>08-Dec, 2021</td>
+              <td class="row-actions">
+                <i class="fa-solid fa-pen edit"></i>
+                <i class="fa-regular fa-trash-can delete"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="student-info">
+                <img src="./css/img/7f02c4469c5672219055d43b0ffb2caf907f4b0d.jpg" alt="">
+                <span>Karthi</span>
+              </td>
+              <td>karthi@gmail.com</td>
+              <td>7305477760</td>
+              <td>1234567305477760</td>
+              <td>08-Dec, 2021</td>
+              <td class="row-actions">
+                <i class="fa-solid fa-pen edit"></i>
+                <i class="fa-regular fa-trash-can delete"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="student-info">
+                <img src="./css/img/7f02c4469c5672219055d43b0ffb2caf907f4b0d.jpg" alt="">
+                <span>Karthi</span>
+              </td>
+              <td>karthi@gmail.com</td>
+              <td>7305477760</td>
+              <td>1234567305477760</td>
+              <td>08-Dec, 2021</td>
+              <td class="row-actions">
+                <i class="fa-solid fa-pen edit"></i>
+                <i class="fa-regular fa-trash-can delete"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="student-info">
+                <img src="./css/img/7f02c4469c5672219055d43b0ffb2caf907f4b0d.jpg" alt="">
+                <span>Karthi</span>
+              </td>
+              <td>karthi@gmail.com</td>
+              <td>7305477760</td>
+              <td>1234567305477760</td>
+              <td>08-Dec, 2021</td>
+              <td class="row-actions">
+                <i class="fa-solid fa-pen edit"></i>
+                <i class="fa-regular fa-trash-can delete"></i>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <script src="./java/inddex.js"></script>
+</body>
+
+</html>
