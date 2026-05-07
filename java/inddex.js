@@ -23,7 +23,7 @@ document.getElementById('addBtn').addEventListener('click', function() {
         </td>
         <td>${email}</td>
         <td>${phone}</td>
-        <td>${Math.floor(Math.random() * 1000000000000000)}</td> <!-- Случайный номер -->
+        <td>${Math.floor(Math.random() * 1000000000000000)}</td> 
         <td>${new Date().toLocaleDateString('en-GB', {day: '2-digit', month: 'short', year: 'numeric'})}</td>
         <td class="row-actions">
             <i class="fa-solid fa-pen edit"></i>
